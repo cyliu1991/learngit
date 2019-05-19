@@ -1,0 +1,228 @@
+-   config:
+        name: doneExerciseList
+        base_url: ${get_base_url()}
+        variables:
+            Token: ${get_token()}
+            student_id: ${get_student_id()}
+            doneExerciseList: ${create_doneExerciseList($student_id)}
+            last_page_num: ${get_last_page_num($doneExerciseList, limit=6)}
+            finished_exercise_num: ${get_doneExercise_num($doneExerciseList)}
+            first_page_timeIncrease: ${get_page_doneExerciseList($doneExerciseList,mode=1,page=1,limit=6)}
+            second_page_timeIncrease: ${get_page_doneExerciseList($doneExerciseList,mode=1,page=2,limit=6)}
+            last_page_timeIncresae: ${get_page_doneExerciseList($doneExerciseList,mode=1,page=$last_page_num,limit=6)}
+            first_page_timeDecrease: ${get_page_doneExerciseList($doneExerciseList,mode=0,page=1,limit=6)}
+            second_page_timeDecrease: ${get_page_doneExerciseList($doneExerciseList,mode=0,page=2,limit=6)}
+            last_page_timeDecresae: ${get_page_doneExerciseList($doneExerciseList,mode=0,page=$last_page_num,limit=6)}
+#        setup_hooks:
+#            - ${setup()}
+#        teardown_hooks:
+#            - ${teardown()}
+-   test:
+        name: 核对已完成作业总数
+#        skip: "核对已完成作业总数"
+        request:
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                token: $Token
+            method: GET
+            params:
+                limit: '6'
+                model: '0'
+                pageNo: '1'
+            url: /student/practice/doneExerciseList
+        extract:
+            exerciseList1: content.data.exerciseList
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - application/json;charset=UTF-8
+        -   eq:
+            - content.code
+            - 10000
+        -   eq:
+            - content.data.exerciseNum
+            - $finished_exercise_num
+
+-   test:
+        name: 按时间从近到远请求第一页
+#        skip: "按时间从近到远请求第一页"
+        request:
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                token: $Token
+            method: GET
+            params:
+                limit: '6'
+                model: '0'
+                pageNo: '1'
+            url: /student/practice/doneExerciseList
+        extract:
+            exerciseList2: content.data.exerciseList
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - application/json;charset=UTF-8
+        -   eq:
+            - content.code
+            - 10000
+        -   eq:
+            - content.data.exerciseList
+            - $first_page_timeDecrease
+
+-   test:
+        name: 按时间从近到远请求第二页
+#        skip: "按时间从近到远请求第二页"
+        request:
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                token: $Token
+            method: GET
+            params:
+                limit: '6'
+                model: '0'
+                pageNo: '2'
+            url: /student/practice/doneExerciseList
+        extract:
+            exerciseList2: content.data.exerciseList
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - application/json;charset=UTF-8
+        -   eq:
+            - content.code
+            - 10000
+        -   eq:
+            - content.data.exerciseList
+            - $second_page_timeDecrease
+
+-   test:
+        name: 按时间从近到远请求结束页
+#        skip: "按时间从近到远请求结束页"
+        request:
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                token: $Token
+            method: GET
+            params:
+                limit: '6'
+                model: '0'
+                pageNo: $last_page_num
+            url: /student/practice/doneExerciseList
+        extract:
+            exerciseList2: content.data.exerciseList
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - application/json;charset=UTF-8
+        -   eq:
+            - content.code
+            - 10000
+        -   eq:
+            - content.data.exerciseList
+            - $last_page_timeDecresae
+
+-   test:
+        name: 按时间从远到近请求第一页
+#        skip: "按时间从近到远请求第一页"
+        request:
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                token: $Token
+            method: GET
+            params:
+                limit: '6'
+                model: '1'
+                pageNo: '1'
+            url: /student/practice/doneExerciseList
+        extract:
+            exerciseList2: content.data.exerciseList
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - application/json;charset=UTF-8
+        -   eq:
+            - content.code
+            - 10000
+        -   eq:
+            - content.data.exerciseList
+            - $first_page_timeIncrease
+
+-   test:
+        name: 按时间从远到近请求第二页
+#        skip: "按时间从远到近请求第二页"
+        request:
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                token: $Token
+            method: GET
+            params:
+                limit: '6'
+                model: '1'
+                pageNo: '2'
+            url: /student/practice/doneExerciseList
+        extract:
+            exerciseList2: content.data.exerciseList
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - application/json;charset=UTF-8
+        -   eq:
+            - content.code
+            - 10000
+        -   eq:
+            - content.data.exerciseList
+            - $second_page_timeIncrease
+
+-   test:
+        name: 按时间从远到近请求结束页
+#        skip: "按时间从远到近请求结束页"
+        request:
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                token: $Token
+            method: GET
+            params:
+                limit: '6'
+                model: '1'
+                pageNo: $last_page_num
+            url: /student/practice/doneExerciseList
+        extract:
+            exerciseList2: content.data.exerciseList
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - application/json;charset=UTF-8
+        -   eq:
+            - content.code
+            - 10000
+        -   eq:
+            - content.data.exerciseList
+            - $last_page_timeIncresae

@@ -1,0 +1,97 @@
+-   config:
+        name: exerciseResults
+        base_url: ${get_base_url()}
+        variables:
+            Token: ${get_token()}
+            exercise_paperID: ${get_exercise_paperID()}
+            exerciseName: ${get_exerciseName()}
+            exerciseOwner: ${get_exerciseOwner()}
+            questionList: ${get_questionList()}
+            skipped_question_record: ${get_skipped_question_record()}
+
+-   test:
+        name: 核对练习题信息
+        request:
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                token: $Token
+            method: GET
+            params:
+                exerciseID: $exercise_paperID
+            url: /student/practice/getExerciseResult
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - application/json;charset=UTF-8
+        -   eq:
+            - content.code
+            - 10000
+        -   eq:
+            - content.data.exerciseID
+            - $exercise_paperID
+        -   eq:
+            - content.data.exerciseName
+            - $exerciseName
+        -   eq:
+            - content.data.exerciseOwner
+            - $exerciseOwner
+        -   eq:
+            - content.data.questionList
+            - $questionList
+
+-   test:
+        name: 答题正确的题目状态
+        request:
+            headers:
+                User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                token: $Token
+            method: GET
+            params:
+                exerciseID: $exercise_paperID
+            url: /student/practice/getExerciseResult
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - application/json;charset=UTF-8
+        -   eq:
+            - content.code
+            - 10000
+        -   eq:
+            - content.message
+            - 'null'
+-   test:
+        name: 补做题目(答错)
+        skip: "test"
+        request:
+            headers:
+                Content-Type: application/json;charset=UTF-8
+                User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36
+                    (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                token: $Token
+            json: $skipped_question_record
+            method: POST
+            url: https://test.data4truth.com/student/practice/revisalResult
+        validate:
+        -   eq:
+            - status_code
+            - 200
+        -   eq:
+            - headers.Content-Type
+            - application/json;charset=UTF-8
+        -   eq:
+            - content.code
+            - 10000
+        -   eq:
+            - content.data
+            - 'null'
+        -   eq:
+            - content.message
+            - 'null'

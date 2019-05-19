@@ -1,0 +1,2396 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2019-03-20 21:21:10</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">2.520 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.0.5 </td>
+      <td>CPython 3.7.2 </td>
+      <td colspan="2">Linux-3.10.0-693.el7.x86_64-x86_64-with-redhat-7.4-Maipo</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">1 (0/1)</td>
+      <td colspan="2">7 (0/7/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>doneExerciseList</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 7</td>
+      <td>SUCCESS: 0</td>
+      <td>FAILED: 7</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">核对已完成作业总数</td>
+      <td style="text-align:center;width:6em;">483.77 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 核对已完成作业总数</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=0&pageNo=1
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>token</strong>: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWYiOjE1NTMyMTc2NTgsImV4cCI6MTU1MzczNjA1OCwidXNlcklkIjoiMDEwMTAxMDAxMTQwNDAyMyIsImlhdCI6MTU1MzEzMTI1OH0.GC5vkrghmhb5hX2IBrTxTEiNO2q_FZYDrXmuL9zHEDw
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=0&pageNo=1
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Thu, 21 Mar 2019 01:12:52 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Methods</strong>: GET,POST
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Max-Age</strong>: 3600
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Headers</strong>: Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With, token
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Credentials</strong>: true
+                            </div>
+                            
+                            <div>
+                              <strong>XDomainRequestAllowed</strong>: 1
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: elb
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 10000, &#39;data&#39;: {&#39;exerciseList&#39;: [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-3&#39;, &#39;finishTime&#39;: &#39;2019-03-12 18:22:08&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-24&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}], &#39;exerciseNum&#39;: &#39;6&#39;}, &#39;message&#39;: &#39;null&#39;}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>eq</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>eq</td>
+                      <td>10000</td>
+                      <td>10000</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.data.exerciseNum
+                      </td>
+                      <td>eq</td>
+                      <td>${get_doneExercise_num([{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}]}</td>
+                      <td>6</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>975</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>483.77</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>483.032</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_1">traceback</a>
+          <div id="popup_attachment_1_1" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_1">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 54, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: validate: content.data.exerciseNum equals ${get_doneExercise_num([{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}]}(str)	==&gt; fail
+6(str) equals ${get_doneExercise_num([{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}]}(str)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 56, in test
+    self.fail(str(ex))
+AssertionError: validate: content.data.exerciseNum equals ${get_doneExercise_num([{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}]}(str)	==&gt; fail
+6(str) equals ${get_doneExercise_num([{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}]}(str)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">按时间从近到远请求第一页</td>
+      <td style="text-align:center;width:6em;">317.07 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 按时间从近到远请求第一页</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=0&pageNo=1
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>token</strong>: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWYiOjE1NTMyMTc2NTgsImV4cCI6MTU1MzczNjA1OCwidXNlcklkIjoiMDEwMTAxMDAxMTQwNDAyMyIsImlhdCI6MTU1MzEzMTI1OH0.GC5vkrghmhb5hX2IBrTxTEiNO2q_FZYDrXmuL9zHEDw
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=0&pageNo=1
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Thu, 21 Mar 2019 01:12:52 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Methods</strong>: GET,POST
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Max-Age</strong>: 3600
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Headers</strong>: Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With, token
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Credentials</strong>: true
+                            </div>
+                            
+                            <div>
+                              <strong>XDomainRequestAllowed</strong>: 1
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: elb
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 10000, &#39;data&#39;: {&#39;exerciseList&#39;: [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-3&#39;, &#39;finishTime&#39;: &#39;2019-03-12 18:22:08&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-24&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}], &#39;exerciseNum&#39;: &#39;6&#39;}, &#39;message&#39;: &#39;null&#39;}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>eq</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>eq</td>
+                      <td>10000</td>
+                      <td>10000</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.data.exerciseList
+                      </td>
+                      <td>eq</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}]</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-3&#39;, &#39;finishTime&#39;: &#39;2019-03-12 18:22:08&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-24&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}]</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>975</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>317.07</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>316.212</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_2">traceback</a>
+          <div id="popup_attachment_1_2" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_2">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 54, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: validate: content.data.exerciseList equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}](list)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-3&#39;, &#39;finishTime&#39;: &#39;2019-03-12 18:22:08&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-24&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}](list) equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}](list)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 56, in test
+    self.fail(str(ex))
+AssertionError: validate: content.data.exerciseList equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}](list)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-3&#39;, &#39;finishTime&#39;: &#39;2019-03-12 18:22:08&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-24&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}](list) equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}](list)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_3">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">按时间从近到远请求第二页</td>
+      <td style="text-align:center;width:6em;">311.12 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_3_1">log-1</a>
+        <div id="popup_log_1_3_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_3_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 按时间从近到远请求第二页</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=0&pageNo=2
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>token</strong>: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWYiOjE1NTMyMTc2NTgsImV4cCI6MTU1MzczNjA1OCwidXNlcklkIjoiMDEwMTAxMDAxMTQwNDAyMyIsImlhdCI6MTU1MzEzMTI1OH0.GC5vkrghmhb5hX2IBrTxTEiNO2q_FZYDrXmuL9zHEDw
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=0&pageNo=2
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Thu, 21 Mar 2019 01:12:52 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Methods</strong>: GET,POST
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Max-Age</strong>: 3600
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Headers</strong>: Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With, token
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Credentials</strong>: true
+                            </div>
+                            
+                            <div>
+                              <strong>XDomainRequestAllowed</strong>: 1
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: elb
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 10000, &#39;data&#39;: {&#39;exerciseList&#39;: [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}], &#39;exerciseNum&#39;: &#39;6&#39;}, &#39;message&#39;: &#39;null&#39;}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>eq</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>eq</td>
+                      <td>10000</td>
+                      <td>10000</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.data.exerciseList
+                      </td>
+                      <td>eq</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}]</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}]</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>974</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>311.12</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>309.57</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_3">traceback</a>
+          <div id="popup_attachment_1_3" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_3">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 54, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: validate: content.data.exerciseList equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}](list) equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 56, in test
+    self.fail(str(ex))
+AssertionError: validate: content.data.exerciseList equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}](list) equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_4">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">按时间从近到远请求结束页</td>
+      <td style="text-align:center;width:6em;">320.45 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_4_1">log-1</a>
+        <div id="popup_log_1_4_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_4_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 按时间从近到远请求结束页</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=0&pageNo=2
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>token</strong>: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWYiOjE1NTMyMTc2NTgsImV4cCI6MTU1MzczNjA1OCwidXNlcklkIjoiMDEwMTAxMDAxMTQwNDAyMyIsImlhdCI6MTU1MzEzMTI1OH0.GC5vkrghmhb5hX2IBrTxTEiNO2q_FZYDrXmuL9zHEDw
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=0&pageNo=2
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Thu, 21 Mar 2019 01:12:53 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Methods</strong>: GET,POST
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Max-Age</strong>: 3600
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Headers</strong>: Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With, token
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Credentials</strong>: true
+                            </div>
+                            
+                            <div>
+                              <strong>XDomainRequestAllowed</strong>: 1
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: elb
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 10000, &#39;data&#39;: {&#39;exerciseList&#39;: [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}], &#39;exerciseNum&#39;: &#39;6&#39;}, &#39;message&#39;: &#39;null&#39;}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>eq</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>eq</td>
+                      <td>10000</td>
+                      <td>10000</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.data.exerciseList
+                      </td>
+                      <td>eq</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}]</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}]</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>974</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>320.45</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>318.638</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_4">traceback</a>
+          <div id="popup_attachment_1_4" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_4">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 54, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: validate: content.data.exerciseList equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}](list) equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 56, in test
+    self.fail(str(ex))
+AssertionError: validate: content.data.exerciseList equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}](list) equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_5">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">按时间从近到远请求第一页</td>
+      <td style="text-align:center;width:6em;">356.07 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_5_1">log-1</a>
+        <div id="popup_log_1_5_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_5_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 按时间从近到远请求第一页</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=1&pageNo=1
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>token</strong>: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWYiOjE1NTMyMTc2NTgsImV4cCI6MTU1MzczNjA1OCwidXNlcklkIjoiMDEwMTAxMDAxMTQwNDAyMyIsImlhdCI6MTU1MzEzMTI1OH0.GC5vkrghmhb5hX2IBrTxTEiNO2q_FZYDrXmuL9zHEDw
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=1&pageNo=1
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Thu, 21 Mar 2019 01:12:53 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Methods</strong>: GET,POST
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Max-Age</strong>: 3600
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Headers</strong>: Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With, token
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Credentials</strong>: true
+                            </div>
+                            
+                            <div>
+                              <strong>XDomainRequestAllowed</strong>: 1
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: elb
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 10000, &#39;data&#39;: {&#39;exerciseList&#39;: [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315&#39;, &#39;finishTime&#39;: &#39;2019-03-12 13:55:37&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-21&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}], &#39;exerciseNum&#39;: &#39;6&#39;}, &#39;message&#39;: &#39;null&#39;}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>eq</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>eq</td>
+                      <td>10000</td>
+                      <td>10000</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.data.exerciseList
+                      </td>
+                      <td>eq</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}]</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315&#39;, &#39;finishTime&#39;: &#39;2019-03-12 13:55:37&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-21&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}]</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>972</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>356.07</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>354.363</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_5">traceback</a>
+          <div id="popup_attachment_1_5" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_5">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 54, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: validate: content.data.exerciseList equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}](list)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315&#39;, &#39;finishTime&#39;: &#39;2019-03-12 13:55:37&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-21&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}](list) equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}](list)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 56, in test
+    self.fail(str(ex))
+AssertionError: validate: content.data.exerciseList equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}](list)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315&#39;, &#39;finishTime&#39;: &#39;2019-03-12 13:55:37&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-21&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}](list) equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}](list)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_6">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">按时间从远到近请求第二页</td>
+      <td style="text-align:center;width:6em;">309.04 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_6_1">log-1</a>
+        <div id="popup_log_1_6_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_6_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 按时间从远到近请求第二页</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=1&pageNo=2
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>token</strong>: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWYiOjE1NTMyMTc2NTgsImV4cCI6MTU1MzczNjA1OCwidXNlcklkIjoiMDEwMTAxMDAxMTQwNDAyMyIsImlhdCI6MTU1MzEzMTI1OH0.GC5vkrghmhb5hX2IBrTxTEiNO2q_FZYDrXmuL9zHEDw
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=1&pageNo=2
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Thu, 21 Mar 2019 01:12:53 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Methods</strong>: GET,POST
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Max-Age</strong>: 3600
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Headers</strong>: Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With, token
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Credentials</strong>: true
+                            </div>
+                            
+                            <div>
+                              <strong>XDomainRequestAllowed</strong>: 1
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: elb
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 10000, &#39;data&#39;: {&#39;exerciseList&#39;: [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}], &#39;exerciseNum&#39;: &#39;6&#39;}, &#39;message&#39;: &#39;null&#39;}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>eq</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>eq</td>
+                      <td>10000</td>
+                      <td>10000</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.data.exerciseList
+                      </td>
+                      <td>eq</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}]</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}]</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>974</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>309.04</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>306.871</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_6">traceback</a>
+          <div id="popup_attachment_1_6" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_6">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 54, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: validate: content.data.exerciseList equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}](list) equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 56, in test
+    self.fail(str(ex))
+AssertionError: validate: content.data.exerciseList equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}](list) equals [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}](list)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_7">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">按时间从远到近请求结束页</td>
+      <td style="text-align:center;width:6em;">328.83 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_7_1">log-1</a>
+        <div id="popup_log_1_7_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_7_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 按时间从远到近请求结束页</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=1&pageNo=2
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>token</strong>: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZWYiOjE1NTMyMTc2NTgsImV4cCI6MTU1MzczNjA1OCwidXNlcklkIjoiMDEwMTAxMDAxMTQwNDAyMyIsImlhdCI6MTU1MzEzMTI1OH0.GC5vkrghmhb5hX2IBrTxTEiNO2q_FZYDrXmuL9zHEDw
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://test.data4truth.com/student/practice/doneExerciseList?limit=6&model=1&pageNo=2
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Thu, 21 Mar 2019 01:12:54 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Methods</strong>: GET,POST
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Max-Age</strong>: 3600
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Headers</strong>: Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With, token
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Credentials</strong>: true
+                            </div>
+                            
+                            <div>
+                              <strong>XDomainRequestAllowed</strong>: 1
+                            </div>
+                            
+                            <div>
+                              <strong>Server</strong>: elb
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;code&#39;: 10000, &#39;data&#39;: {&#39;exerciseList&#39;: [{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}], &#39;exerciseNum&#39;: &#39;6&#39;}, &#39;message&#39;: &#39;null&#39;}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>eq</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>eq</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.code
+                      </td>
+                      <td>eq</td>
+                      <td>10000</td>
+                      <td>10000</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.data.exerciseList
+                      </td>
+                      <td>eq</td>
+                      <td>${get_page_doneExerciseList([{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}],1,2,limit=6))}</td>
+                      <td>[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}]</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>974</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>328.83</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>326.852</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_7">traceback</a>
+          <div id="popup_attachment_1_7" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_7">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 54, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: validate: content.data.exerciseList equals ${get_page_doneExerciseList([{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}],1,2,limit=6))}(str)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}](list) equals ${get_page_doneExerciseList([{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}],1,2,limit=6))}(str)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;/usr/local/python3/lib/python3.7/site-packages/httprunner/api.py&#34;, line 56, in test
+    self.fail(str(ex))
+AssertionError: validate: content.data.exerciseList equals ${get_page_doneExerciseList([{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}],1,2,limit=6))}(str)	==&gt; fail
+[{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190212-152135&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:05:24&#39;, &#39;exerciseID&#39;: &#39;010101001001-11404023-20190212-152135-153&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-2&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:13:28&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-23&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-5&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:16:15&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-26&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-7&#39;, &#39;finishTime&#39;: &#39;2019-03-12 14:49:06&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-28&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-6&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:32:10&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-27&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-20190117-145315-4&#39;, &#39;finishTime&#39;: &#39;2019-03-12 15:51:54&#39;, &#39;exerciseID&#39;: &#39;010102001001-11303033-20190117-145315-25&#39;}](list) equals ${get_page_doneExerciseList([{&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-0&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-0&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:00&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-1&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-1&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:01&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-2&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-2&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:02&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-3&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-3&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:03&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-4&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-4&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:04&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-5&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-5&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:05&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-6&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-6&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:06&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-7&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-7&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:08&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-8&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-8&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:09&#39;}, {&#39;exerciseName&#39;: &#39;陈翰韬强化训练-1111-1111-9&#39;, &#39;exerciseID&#39;: &#39;1111-1111-1111-1111-9&#39;, &#39;finishTime&#39;: &#39;2019-03-20 21:21:10&#39;}],1,2,limit=6))}(str)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>
