@@ -34,7 +34,7 @@ if __name__ == '__main__':
     request_method1 = 'GET'
 
     request_url1 = "https://test.data4truth.com/parent/weixin/studyAnalysisPage1"
-    # request_data1 = {"phoneNumber": "17601007087", "password": "123456", "openId": "oYDdx5obRINceSr0t5qxpy8Hysqk"}
+    # request_data1 = {"phoneNumber": "__", "password": "123456", "openId": "__"}
     # print(type(request_data1))
     request_res1 = send_request.send_request(request_method1, request_url1, headers=request_headers)
     print(request_res1.text)
