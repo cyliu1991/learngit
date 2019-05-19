@@ -9,10 +9,10 @@ import json
 
 def create_conn():
     server = SSHTunnelForwarder(
-            '61.174.255.246',  # B机器的配置
+            'serverB_ip',  # B机器的配置
             ssh_password='Data4truth.com',
             ssh_username='root',
-            remote_bind_address=('10.70.11.215', 3306)  # 数据库服务器配置
+            remote_bind_address=('serverSQL_ip', 3306)  # 数据库服务器配置
     )
     server.start()
 #    print(server.local_bind_port)
